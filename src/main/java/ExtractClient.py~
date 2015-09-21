@@ -15,7 +15,7 @@ from thrift.protocol import TBinaryProtocol
 
 try:
 
-	transport=TSocket.TSocket('localhost',9085)
+	transport=TSocket.TSocket('localhost',9095)
 	
 	transport=TTransport.TBufferedTransport(transport)
 
