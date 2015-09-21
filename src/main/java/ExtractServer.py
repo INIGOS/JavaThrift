@@ -1,4 +1,4 @@
-port = 9070
+port = 9085
 
 import sys, glob
 sys.path.append('gen-py')
@@ -40,9 +40,7 @@ class extractHandler(object):
                 try:
                     score=self.emoticons[word]
                     emo=emoticons.analyze_tweetHeavy(word)
-                    #emo_list.append(word)
                     emo_list.append(emo)
-                    #d=dict(itertools.izip_longest(*[iter(emo_list)] * 2, fillvalue=""))
                     self.answer['EMOTICONS']=emo_list
                 except:
 
